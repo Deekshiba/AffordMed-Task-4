@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffc107; 
+}
+
+.hero {
+    background: url('holiday-photo.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+.hero p {
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #f97102;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.services {
+    display: grid;  
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-top: -100px;
+}
+.service {
+    background: #eee9e9;
+    padding: 50px 20px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.service img {
+    width: 60px;  
+    height: 60px;
+    display: block;
+    margin: 0 auto 15px; 
+}
+
+.about {
+    position: relative;  
+    background: url('Background2.jpg') no-repeat center center/cover;
+    height: 500px; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+    padding-bottom: 10px; 
+}
+
+.about-content {
+    background:rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -50px;
+    line-height: 1.8;
+}
+
+.values-heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 100px; 
+    position: relative;
+    z-index: 2; 
+}
+
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 40px;
+}
+
+.value {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;  
+    gap: 10px; 
+}
+
+.value img {
+    width: 20px; 
+    height: auto;
+}
