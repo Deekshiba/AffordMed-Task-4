@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+}
+
+
+.menu-toggle {
+    display: none; 
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+.hero {
+    background: url('holiday-photo.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 180px 20px;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: #f97102;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #d65a00;
+}
+
+
+.about {
+    position: relative;  
+    background: url('Background2.jpg') no-repeat center center/cover;
+    height: 500px; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+    padding-bottom: 10px; 
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -50px;
+}
+
+.about-content h2 {
+    font-weight: bold; 
+    font-size: 2em; 
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.service {
+    background: #eee;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.service img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.values-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 50px 0 20px;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.value {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;  
+    gap: 10px; 
+}
+
+.value img {
+    width: 30px;
+    height: auto;
+}
+
+
+.donate-section {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+}
+
+#donation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#donation-form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#donation-form .btn {
+    background: #f97102;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#donation-form .btn:hover {
+    background: #d65a00;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
